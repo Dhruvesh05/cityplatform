@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Cooperation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>City Cooperation Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="project-scheduling.html">Project Scheduling</a></li>
+                <li><a href="resource-sharing.html">Resource Sharing</a></li>
+                <li><a href="service-improvement.html">Service Improvement</a></li>
+                <li><a href="accountability-tracking.html">Accountability Tracking</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Select Your City</h2>
+            <form id="cityForm">
+                <label for="city">Enter a City in India:</label>
+                <input type="text" id="city" name="city" placeholder="e.g., Mumbai" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="departmentsSection" style="display: none;">
+            <h2>Departments Available in <span id="cityName"></span></h2>
+            <ul id="departmentsList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 City Cooperation Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
